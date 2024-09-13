@@ -29,7 +29,7 @@ pipeline {
           }
         }
       }
-    }
+    
       stage('Installation in Loacl') {
         steps{
           script{
@@ -45,4 +45,4 @@ pipeline {
         }
       }
     }
-  
+  }
