@@ -30,4 +30,19 @@ pipeline {
         }
       }
     }
-  }
+      stage('Installation in Loacl') {
+        steps{
+          script{
+            bat 'mvn install'
+          }
+        }
+      }
+      stage('Deployment') {
+        steps{
+          script{
+            bat 'mvn deploy'
+          }
+        }
+      }
+    }
+  
