@@ -30,7 +30,7 @@ pipeline {
         }
       }
     
-      stage('Installation in Loacl') {
+      stage('Installation in Local') {
         steps{
           script{
             bat 'mvn install'
